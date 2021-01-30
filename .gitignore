@@ -1,7 +1,8 @@
-/.vscode/
-/env/
-/__pycache__/
-/images/
-geckodriver.log
+./geckodriver.log
+./.vscode
+./images
+./env
+
+
 
 
