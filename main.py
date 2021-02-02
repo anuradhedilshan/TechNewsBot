@@ -67,7 +67,7 @@ option.page_load_strategy = 'none'
 
 def fetch_data():
     try:
-        with webdriver.Firefox(executable_path='./geckodriver',options=option) as driver:
+        with webdriver.Firefox(executable_path='/usr/local/bin/geckodriver',options=option) as driver:
             print("BEFORE WAIT")
             wait = WebDriverWait(driver, 10)
             print("AFTER WAIT")
