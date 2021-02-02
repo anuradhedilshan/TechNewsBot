@@ -100,8 +100,7 @@ def send_Atrticle_fromDB():
         send_Atrticle(data[2],data[3],data[5])
     except Exception as e:
         print("Erro @ send_atricle_from db - ",e)
-
-
+fetch_data()
 
 #main Code 
 
