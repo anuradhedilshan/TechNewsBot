@@ -62,6 +62,7 @@ def insertDatabaseAndSend(driver,data):
 
 option = Options()
 option.headless = True
+option.add_argument('-headless')
 option.page_load_strategy = 'none'
 
 def fetch_data():

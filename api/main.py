@@ -5,6 +5,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.firefox.options import Options
 from selenium.common.exceptions import *
 import time
 
@@ -98,6 +99,7 @@ def findUser(driver, name):
 option = Options()
 option.headless = True
 option.page_load_strategy = 'none'
+option.add_argument('-headless')
 
 def send_Atrticle(title,discription,imgpath):
     # driver = webdriver.Chrome(executable_path="chromedriver.exe")
